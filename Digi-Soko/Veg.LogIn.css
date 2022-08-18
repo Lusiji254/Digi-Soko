@@ -1,0 +1,74 @@
+*
+{
+
+}
+
+nav
+{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	opacity: 0.8;
+}
+
+nav ul
+{	
+}
+
+nav ul li
+{
+	list-style-type: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	display: inline-block;
+	float: left;
+	width:150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+
+}
+
+nav ul li: hover
+{
+	background-color: green;
+	transition-duration: 0.5s;
+
+}
+
+nav ul li a
+{
+	color: white;
+	text-decoration: none;
+
+}
+
+<--BODY-->
+body
+{
+	height: 100%;
+}
+
+<--FOOTER-->
+
+.all-footer
+{
+	background-color: black;
+	height:400px;
+	width:100%;
+	bottom: 0px;
+	left: 0px;
+	padding-top:20px;
+	position: relative;
+}
+.footer-bottom
+{
+	height: 20PX;
+	width: 100%;
+	background-color: grey;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px
+	padding-top:20px;
+}

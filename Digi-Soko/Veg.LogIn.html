@@ -1,0 +1,59 @@
+<?php 
+	
+	session_start();
+	if(!isset($_SESSION["email"]))
+	{
+		header("location:Veg.LogIn.html");
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Veg.Login.css">
+	<div>
+		<nav>
+			<ul>
+				<li><a href="Veg.HomePage.html">Back</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</nav>
+	</div>
+	<style type="text/css">
+body{
+background-image: url('Images/Back1.jpg');
+ background-size: 100%;
+
+}		
+
+
+
+	</style>
+</head>
+<body style="0% " align="center" class="border-outset">
+	<div class="login-box" style="background-color:white; opacity: 0.9;height: 400px;width:400px;margin-left: 450px;">
+		<img src="Images/Avatar2.png" class="Avatar" alt="Logo Image" style="width: 100px; height: 100px"> 
+		<h1 style="text-decoration-style: none">Login</h1>
+		<form action="veglogin.php" method="post">
+			<label style="color: black; font-size: 25px; opacity: 100">Username: </label>
+			<input type="text" name="email" placeholder="Enter Username" style="opacity: 10; border-style: block;"><br><br>
+			<label style="color: black; font-size: 25px; opacity: 13">Password: </label>
+			<input type="Password" name="password" placeholder="Enter Password"><br><br>
+			<input type="submit" name="submit" value="Login"><a href="veglogin.php">    <br><br>
+			<a href="a" style="text-decoration-style: none; font-family: arial; font-size: 20px;text-decoration-line: none;"> Forgot Password</a>
+			<p>You don't have an account?<a href="Veg.SignUp.html">Sign Up</a></p>
+		</form>
+	</div>
+</body>
+<footer class="all-footer">
+	<div class="footer-content">
+	</div>
+	<div class="footer-bottom">
+		&copy; Vegies.com | Designed by Obala and Lusiji
+	</div>
+</footer>
+</html>

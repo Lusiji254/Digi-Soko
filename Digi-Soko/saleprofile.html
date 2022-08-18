@@ -1,0 +1,35 @@
+<?php 
+	
+	session_start();
+	if(!isset($_SESSION["email"]))
+	{
+		header("location:Veg.LogIn.html");
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product profile</title>
+</head>
+<body>
+	<form method="post" action="salesprofile.php" enctype="multipart/form-data">
+		<input type="hidden" name="size" value="1000000">
+		<p><label>Product name</label>
+			<input type="text" name="pname" ></p>
+			<p><label>Price per Unit</label>
+			<input type="text" name="price" ></p>
+<p><label>Quantity</label>
+			<input type="text" name="quantity" ></p>
+<p><label>Location</label>
+			<input type="text" name="location" ></p>
+<p><label>Description</label>
+			<input type="text" name="description" ></p>
+			<p><label>image</label>
+			<input type="file" name="image" ></p>
+
+<input type="submit" name="post" value="post">
+	</form>
+
+</body>
+</html>

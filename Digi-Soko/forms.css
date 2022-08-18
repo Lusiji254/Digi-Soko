@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.container{
+	width: 60%;
+	margin:2rem auto;
+	border:1px solid gray;
+	padding: 30px;	
+}
+label{
+	display: block;
+}
+input{
+	display:block;
+	width:80%%;
+}

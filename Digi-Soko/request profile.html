@@ -1,0 +1,45 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION["email"]))
+	{
+		header("location:Veg.LogIn.html");
+	}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request Form</title>
+	<link rel="stylesheet" type="text/css" href="forms.css">
+</head>
+<body>
+	<header>
+	<div class="profile_info">
+			
+				<strong><?php echo $_SESSION['email']; ?></strong>
+					<small>
+						<i  style="color: #888;"></i> 
+						<br>
+						<a href="welcome.php?logout='1'" style="color: red;">logout</a>
+					</small>
+
+				
+			</div>
+			</header>
+	<form class="container" method="post" action="request profile.php" enctype="multipart/form-data">
+		<input type="hidden" name="size" value="1000000">
+		<p><label>Product name</label>
+			<input type="text" name="pname" ></p>
+			<p><label>Description</label>
+			<input type="text" name="description" ></p>
+           <p><label>Quantity</label>
+			<input type="text" name="quantity" ></p>
+            <p><label>Location</label>
+			<input type="text" name="location" ></p>
+			
+<input type="submit" name="post" value="post">
+	</form>
+
+
+</body>
+</html>

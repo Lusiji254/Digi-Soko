@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up | Vegies website</title>
+	<link rel="stylesheet" type="text/css" href="Veg.Signup.css">
+	<div>
+		<nav>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+			<li><a href=""></a></li>
+		</nav>
+	</div>
+</head>
+<body style="background-image: url(Images/Back2.jpg);background-repeat: no-repeat;background-size: 100%">
+	<div class="login-box" >	
+	<form  action="signup.php" method="post" style="margin-left: 500px;background-color:white; opacity: 0.8;height:550px;width:500px; position: center">
+		<img src="Images/Avatar2.png" class="Avatar" alt="Logo Image" style="width: 100px; height: 100px margin-left:500px;">
+		<p><label>ID number</label>
+		<input type="text" name="ID" placeholder="Enter Username"></p>
+		<p><label>First Name</label>
+		<input type="text" name="fname" placeholder="Enter First Name"></p>
+		<p><label>Last Name</label>
+		<input type="text" name="lname" placeholder="Enter First Name"></p>
+		<p><lable>Location</lable>
+		<input type="" name="location" placeholder="Enter Location"></p>
+		<p><label>Phone Number</label>
+		<input type="tel" name="phone" placeholder="Enter Phone Number"></p>
+		<p><label>Email address</label>
+		<input type="Email" name="email" placeholder="Enter Email Address"></p>
+		<p><label>Password</label>
+		<input type="Password" name="pass" placeholder="Enter Password"></p>
+		<p><label>Confirm Password</label>
+		<input type="Password" name="pass2" placeholder="Confirm Your Password"></p>
+		<p><label>You are signing up as a :</label></p>
+			<p><label><input type="radio" name="usertype" value="c" id="customer">Customer</label></p>
+			<p><label><input type="radio" name="usertype" value="f" id="farmer">Farmer</label></p>
+		<input style="padding: 5px;background-color: powderblue;
+		font-family:times new roman;float: right" type="submit" class="btn" name="submit" value="Submit">
+	</form>
+	</div>
+</body>
+</html>
